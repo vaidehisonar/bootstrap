@@ -3,17 +3,11 @@
 //
 
 .bg-faded {
-  background-color: darken($body-bg, 3%);
+  background-color: darken($body-bg, 3%) !important;
 }
 
-@include bg-variant('.bg-primary', $brand-primary);
-
-@include bg-variant('.bg-success', $brand-success);
-
-@include bg-variant('.bg-info', $brand-info);
-
-@include bg-variant('.bg-warning', $brand-warning);
-
-@include bg-variant('.bg-danger', $brand-danger);
-
-@include bg-variant('.bg-inverse', $brand-inverse);
+// scss-lint:disable ImportantRule
+@each $color, $value in $colors {
+  .bg-#{$color} { background-color: $value !important; }
+}
+// scss-lint:enable ImportantRule

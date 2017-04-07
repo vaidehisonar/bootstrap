@@ -34,25 +34,11 @@
 
 // Contextual colors
 
-.text-white {
-  color: #fff !important;
+// scss-lint:disable ImportantRule
+@each $color, $value in $colors {
+  .text-#{$color} { color: $value !important; }
 }
-
-@include text-emphasis-variant('.text-muted', $text-muted);
-
-@include text-emphasis-variant('.text-primary', $brand-primary);
-
-@include text-emphasis-variant('.text-success', $brand-success);
-
-@include text-emphasis-variant('.text-info', $brand-info);
-
-@include text-emphasis-variant('.text-warning', $brand-warning);
-
-@include text-emphasis-variant('.text-danger', $brand-danger);
-
-// Font color
-
-@include text-emphasis-variant('.text-gray-dark', $gray-dark);
+// scss-lint:enable ImportantRule
 
 // Misc
 
