@@ -1,5 +1,6 @@
 // Card variants
 
+// TODO: replace with .bg- and .border- utils
 @mixin card-variant($background, $border) {
   background-color: $background;
   border-color: $border;
@@ -10,6 +11,7 @@
   }
 }
 
+// TODO: replace with .border- utils
 @mixin card-outline-variant($color) {
   background-color: transparent;
   border-color: $color;
