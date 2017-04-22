@@ -1,0 +1,47 @@
+body {
+	background:black;
+}
+h1{
+	font-weight:bold;
+	font-size:60px;
+	color:white;
+	text-align:center;
+	font-family: "Times New Roman", Times, serif;
+}
+h2{
+	font-size:70px;
+	color:white;
+	font-weight:bold;
+	font-family: "Times New Roman", Times, serif;
+	text-align:center;
+}
+p{
+	font-size:20px;
+	color:white;
+	text-align:center;
+	background:black;
+}
+
+h3{
+	
+	font-size:40px;
+	color:white;
+	text-align:center;
+}
+#vp{
+	
+	font-size:25px;
+	color:white;
+	text-align:center;
+}
+#v{
+	font-size:30px;
+	color:white;
+	text-align:center;
+}
+#connect{
+	color:#CDD490;
+	background:#999;
+	font-size:20px;
+	text-align:center;
+}
